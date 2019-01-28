@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<img src="C:\Users\ADMIN005\Desktop\Lisa'sWebsite\Images">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOME</title>
+</head>
+<style>
+body {
+	background-image: url("Images/mirror.jpg");
+	font-family: 'Cardo', serif;
+	background-size: cover; 
+	margin: 0%;
+}
+
+.tablink {
+  background-color: gray;
+  color: white;
+  font-family: 'Cardo', serif;
+  font-variant: small-caps;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding:9px 7px;
+  font-size: 25px;
+  width: 20%;
+  position: relative;
+  bottom: 500px;
+}
+
+.tablink :hover {
+  background-color: white;
+  color: black;
+}
+
+.tabcontent {
+	background-color: white;
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+h1 {
+	font-size: large;
+	text-align: center;
+    font-family: 'Oswald' sans-serif;
+   text-transform: uppercase;
+   font-size: 100px;
+   padding: 0px;
+   background-color: gray;
+   color: white;
+   margin-top: 500px;
+}
+
+h2 {
+	font-size: larger;
+	font-size: 25px;
+	text-align: center;
+    font-family: 'Cardo', sans-serif;
+    font-variant: small-caps;
+    color: white;
+    word-spacing: 8cm;
+    position: relative;
+    bottom: 450px;
+    background-color: gray;
+
+}
+</style>
+<body>
+
+	<div class="row">
+<button class="tablink" onclick="window.location.href='home.html' "id="defaultOpen">Home</button>
+<button class="tablink" onclick="window.location.href='about.html'">About</button>
+<button class="tablink" onclick="window.location.href='blog.html'">Blog</button>
+<button class="tablink" onclick="window.location.href='portfolio.html'">Portfolio</button>
+<button class="tablink" onclick="window.location.href='contact.html'">Contact</button>
+ </div>
+<div id="Home" class="tabcontent">
+</div>
+<div id="About" class="tabcontent"> 
+</div>
+<div id="Blog" class="tabcontent">
+</div>
+<div id="Portfolio" class="tabcontent">
+  </div> 
+<div id="Contact" class="tabcontent">
+</div>
+	</div>
+
+	<h1> Lisa Vabaza <h1>
+	<h2> Minimalist.     Artist.     Contemporist.
+
+	<script>
+
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+	</script>
+	</body>
+	</html>
+	
